@@ -2,6 +2,7 @@
     --color1: purple;
     --color2: darkgrey;
     --textcolor: white;
+    --box-width: 80%;
 }
 
 *{
@@ -32,32 +33,50 @@ section {
     flex-wrap: wrap;
     padding: 2%;
     margin: auto;
+    justify-content: space-evenly;
 }
+
 ul{
     list-style-type: none;
 }
 .box {
     border: dashed var(--textcolor);
     min-width: 25%;
+    min-height:auto;
+    padding: 1%;
+    margin-top: 5%;
     
 }
-.box h2{
+
+.box-header {
     color: var(--color1);
     text-align: left;
     padding: 2%;
     margin: auto;
     z-index: 2;
     border: solid 2px;
-    position: relative;
-    bottom: 25px;
     background-color: var(--color2);
     border-radius: 5px;
-    max-width: 75%;
+    max-width: var(--box-width);
+    position: relative;
+    margin-top: -10%;
+}
 
-
-.box h2 p {
+.box p {
     color: var(--color1);
     text-align: left;
     padding: 2%;
-    margin: 1%;
+    margin: auto;
+    max-width: var(--box-width);
+}
+
+#code {
+    color: var(--textcolor);
+    text-align: left;
+    padding: 2%;
+    margin: auto;
+    background-image: linear-gradient(var(--color2) 0%, var(--color1)100%);
+    border-radius: 5px;
+    max-width: var(--box-width);
+
 }
