@@ -2,7 +2,7 @@
     --color1: purple;
     --color2: darkgrey;
     --textcolor: white;
-    --box-width: 80%;
+    --box-width: 90%;
 }
 
 *{
@@ -12,12 +12,13 @@
 body{
     background-color: var(--color2);
 }
+
 header {
     display: flex;
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: var(--box-width);
     padding: 2%;
     margin: auto;
 }
@@ -42,10 +43,10 @@ ul{
 }
 .box {
     border: dashed var(--textcolor);
-    min-width: 25%;
+    width: 25%;
     min-height:auto;
     padding: 1%;
-    margin-top: 5%;
+    margin-top: 2%;
     
 }
 
@@ -71,6 +72,7 @@ ul{
     max-width: var(--box-width);
 }
 
+
 #coder {
     color: var(--textcolor);
     text-align: left;
@@ -80,6 +82,16 @@ ul{
     border-radius: 5px;
     max-width: var(--box-width);
 
+}
+.box:hover .box-header{
+    border-radius: 15px;
+    transition: all 0.5s ease-in-
+    out;
+}
+.box:hover, .box:hover .box-header {
+    box-shadow: inset 0px 0px 8px
+    var(--color1), 0 0 15px
+    var(--color1);
 }
 
 @media screen and (max-width: 992px) {
