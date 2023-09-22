@@ -21,8 +21,9 @@ header {
     padding: 2%;
     margin: auto;
 }
-header h1{
+header h1, h2{
     color: var(--color1);
+    text-align: center;
 }
 header p{
     color: var(--textcolor);
@@ -70,7 +71,7 @@ ul{
     max-width: var(--box-width);
 }
 
-#code {
+#coder {
     color: var(--textcolor);
     text-align: left;
     padding: 2%;
