@@ -1,0 +1,63 @@
+:root {
+    --color1: purple;
+    --color2: darkgrey;
+    --textcolor: white;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: var(--color2);
+}
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+    margin: auto;
+}
+header h1{
+    color: var(--color1);
+}
+header p{
+    color: var(--textcolor);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    margin: auto;
+}
+ul{
+    list-style-type: none;
+}
+.box {
+    border: dashed var(--textcolor);
+    min-width: 25%;
+    
+}
+.box h2{
+    color: var(--color1);
+    text-align: left;
+    padding: 2%;
+    margin: auto;
+    z-index: 2;
+    border: solid 2px;
+    position: relative;
+    bottom: 25px;
+    background-color: var(--color2);
+    border-radius: 5px;
+    max-width: 75%;
+
+
+.box h2 p {
+    color: var(--color1);
+    text-align: left;
+    padding: 2%;
+    margin: 1%;
+}
