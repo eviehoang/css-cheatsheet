@@ -80,3 +80,26 @@ ul{
     max-width: var(--box-width);
 
 }
+
+@media screen and (max-width: 992px) {
+    .box {
+        min-width: 40%;
+    }
+    header{ 
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .box{
+        flex-direction: column;
+        min-width: 100%;
+        margin-top: 10%;
+    }
+    .box-header{
+        margin-top:-7%;
+    }
+    header{
+        max-width: 90%;
+    }
+}
