@@ -1,6 +1,6 @@
 :root {
-    --color1: purple;
-    --color2: darkgrey;
+    --color1: rgb(216, 0, 216);
+    --color2: black;
     --textcolor: white;
     --box-width: 90%;
 }
@@ -74,6 +74,7 @@ ul{
 
 
 #coder {
+    flex-grow: 1;
     color: var(--textcolor);
     text-align: left;
     padding: 2%;
